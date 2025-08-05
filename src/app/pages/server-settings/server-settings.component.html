@@ -1,0 +1,11 @@
+<div class="main-container">
+  <form class="settings-main foreground">
+    <div class="spinner-block" *ngIf="isLoading">
+      <mat-spinner class="spinner"></mat-spinner>
+    </div>
+    <app-reactive-form [formGroup]=formGroup></app-reactive-form>
+  </form>
+</div>
+
+<div id="snackbar" [ngClass]="{'show': modified }">Save changes ? <span class="btn save" (click)="onSubmit()"
+    [ngClass]="{'invalid': isValid}">Save</span></div>

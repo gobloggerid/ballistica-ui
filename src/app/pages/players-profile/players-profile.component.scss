@@ -1,0 +1,30 @@
+.main-container {
+  width: 80%;
+  margin: auto;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.options {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 768px) {
+  .players-section {
+    width: 100%;
+  }
+  .main-container {
+    width: 92%;
+  }
+}
